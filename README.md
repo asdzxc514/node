@@ -44,7 +44,7 @@ var server = http.createServer(funcion(request, response){
 `function 뒤에 함수명 없음`<br>
 `writeHead(숫자`  숫자 === 상태코드 , ex) 200 정상 404 에러<br><br>
 
-- ### ** ? 키=값 & 키2=값2** <br>
+- ### **? 키=값 & 키2=값2** <br>
 `Query String` 이라고 부름 ( 요청방법 1. 주소형태, 2. HTML의 form 방식 )
 ```
 http://naver.com/hyejin?postId=222&cafeId=222
