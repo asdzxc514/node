@@ -34,14 +34,6 @@ pm2 start main.js --watch --ignore-watch="data/* sessions/*"  --no-daemon
 <br><br>
 
 ## **main.js**<br>
-```
-var http = require('http');
-var server = http.createServer(funcion(request, response){
-    response.writeHead(200, {'Content-Type': 'text/html'});
-    response.end('Hello node.js!');
-    });
-```
-
 `require()`  <br>
 1) dynamic loading을 할 수 있다.<br>
 2) synchronous (여러 개를 require하면 순차적으로 처리)<br>
@@ -53,7 +45,15 @@ var server = http.createServer(funcion(request, response){
 
 `createServer`  http 모듈에 정으된 함수<br>
 `function 뒤에 함수명 없음`<br>
-`writeHead(숫자`  숫자 === 상태코드 , ex) 200 정상 404 에러<br><br>
+`writeHead(숫자`  숫자 === 상태코드 , ex) 200 정상 404 에러<br>
+```
+var http = require('http');
+var server = http.createServer(funcion(request, response){
+    response.writeHead(200, {'Content-Type': 'text/html'});
+    response.end('Hello node.js!');
+    });
+```
+<br><br>
 
 - ### **? 키=값 & 키2=값2** <br>
 `Query String` 이라고 부름 ( 요청방법 1. 주소형태, 2. HTML의 form 방식 )
