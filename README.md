@@ -22,9 +22,13 @@ pm2 start main.js --watch --ignore-watch="data/*"
 ```
 
 pm2로 실행한 모든 프로세스를 중지 & 삭제 합니다. <br>
-```pm2 kill```<br>
+```
+pm2 kill
+```<br>
 아래 명령은 pm2를 실행하면서 로그가 출력되도록 합니다. (--no-daemon) 또 특정 디랙토리에 대한 watch를 하지 않도록 하는 방법입니다. <br>
-```pm2 start main.js --watch --ignore-watch="data/* sessions/*"  --no-daemon```
+```
+pm2 start main.js --watch --ignore-watch="data/* sessions/*"  --no-daemon
+```
 
 
 <br><br>
